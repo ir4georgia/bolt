@@ -4,6 +4,7 @@
 # Created March 5, 2025
 # Updates:
 # Focused Development for BR-2.0
+# 3.7.25 - Update Readme, Add Required folders, Add Example files
 
 import base64
 import datetime
@@ -17,8 +18,7 @@ import sys
 # Global Parameters
 ####################################################################
 
-# remoteHarFile = "/Users/mpierce/Desktop/MML-Chls/BR-iPhone-3.6.25-2-Tax-Act-OptOut.har"
-remoteHarFile = "/Users/mpierce/Desktop/MML-Chls/BR-Iphone-Opt-Out.har"
+remoteHarFile = "HARFiles/BR-Iphone-Opt-Out.har"
 productTested = "BR-2.0-iPhone"
 DEBUG = False   # provides extra logging when true
 log4email = []
