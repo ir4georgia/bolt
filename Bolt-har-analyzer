@@ -18,13 +18,13 @@ import sys
 # Global Parameters
 ####################################################################
 
-remoteHarFile = "HARFiles/BR-Iphone-Opt-Out.har"
+remoteHarFile = "HARFiles/BR-App-4.21.25.har"
 productTested = "BR-2.0-iPhone"
 DEBUG = False   # provides extra logging when true
 log4email = []
 dirname = os.path.dirname(__file__)
 logPath = "Logs"
-logName = "ottoAdSparxWork.txt"
+logName = "ottoBoltLog.txt"
 theHar = {}
 commentBreaker = "Otto: ############################################################"
 
@@ -162,10 +162,10 @@ def extractPlaybackInfo(EATPlaybackInfo):
             rawResponseData =  base64.b64decode(entry["response"]["content"]["text"]).decode('utf-8')
         playBackResponseDict = json.loads(rawResponseData)
         msglog("Otto: Response Session ID {0}: {1}".format(index, playBackResponseDict["ssaiInfo"]["vendorAttributes"]["sessionId"]))
+        msglog("Otto: Video ID: {0}".format(playBackResponseDict["videos"][0]["manifestationId"]))
         for index, adbreak in enumerate(playBackResponseDict["ssaiInfo"]["vendorAttributes"]["breaks"]):
             for ad in adbreak["ads"]:
                 expected_trackers = []
-                msglog("Otto: Video ID: {0}".format(ad["videoId"]))
                 msglog("Otto: Ad Break: {0} Ad ID: {1} Ad System: {2}".format(index, ad["adMetadata"]["adId"],ad["adMetadata"]["adSystem"]))
                 msglog("Otto: Expected Events")
                 if 'events' in ad:
