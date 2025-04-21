@@ -167,6 +167,7 @@ def extractPlaybackInfo(EATPlaybackInfo):
             for ad in adbreak["ads"]:
                 expected_trackers = []
                 msglog("Otto: Ad Break: {0} Ad ID: {1} Ad System: {2}".format(index, ad["adMetadata"]["adId"],ad["adMetadata"]["adSystem"]))
+                msglog("Otto: Placement: {0}".format(ad["title"]))
                 msglog("Otto: Expected Events")
                 if 'events' in ad:
                     if 'impressions' in ad["events"]:
