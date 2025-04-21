@@ -5,6 +5,7 @@
 # Updates:
 # Focused Development for BR-2.0
 # 3.7.25 - Update Readme, Add Required folders, Add Example files
+# 4.21.25 - Correct VideoID capture, Add FW Placement
 
 import base64
 import datetime
@@ -18,7 +19,7 @@ import sys
 # Global Parameters
 ####################################################################
 
-remoteHarFile = "HARFiles/BR-App-4.21.25.har"
+remoteHarFile = "HARFiles/BR-Iphone-Opt-Out.har"
 productTested = "BR-2.0-iPhone"
 DEBUG = False   # provides extra logging when true
 log4email = []
