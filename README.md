@@ -4,8 +4,7 @@
 * Bolt-har-analyzer
 
 ## queryParamDiff is a Python script to compare query parameters of a Prod and Staging Ad Reqests
-The purpose of this tool is to ensure Ad Calls from TOP2 players have the correct query parameters as we switch to  
-BOLT back-end infrastructure by changing the YoSpace Ads Promotion  
+The purpose of this tool is to ensure Ad Calls from TOP2 players have the correct query parameters as we switch to BOLT back-end infrastructure by changing the YoSpace Ads Promotion  
 
 ## Bolt-har-analyzer is Python script to analyze a .har log captured from Bolt/Beam Player
 The purpose of this tool is to verify that the expected tracking beacons actually fire  
