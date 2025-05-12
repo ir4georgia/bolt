@@ -1,0 +1,105 @@
+Otto: ############################################################
+Otto: Prod vs Stage Ad Call Diff
+Otto: This script compares query parameter between two ad calls, Prod and Bolt
+Otto: Testing Began at 2025-05-12 at 02:32 PM
+Otto: ############################################################
+Otto: Prod Ad Call: https://bea4.v.fwmrm.net/ad/g/1?flag=+slcb+aeti+sltp+fbad+vicb+emcr+amcb&nw=48804&asnw=48804&csid=cnn.com_videos_cnngoappletvpreroll&caid=me351ad9f5e98e4b030fbf7dfe2f7086963c55900a&vdur=62.02903&prof=48804%3Acnn_appletv_vod&resp=vmap1+vast4&vprn=1540830557&pvrn=1540830557&mode=on-demand&afid=68151992&metr=1023&vip=70.88.180.74;_fw_h_user_agent=CNNPlusRN-tvOS%2F11207094+CFNetwork%2F3826.400.120+Darwin%2F24.3.0&_fw_ar=0&_fw_vcid2=ce620f01-23b2-41fd-85a8-2386c88758ea&_fw_atts=3&ifa_id=&ifa_type=sessionid&_fw_did=sessionid%3Ace620f01-23b2-41fd-85a8-2386c88758ea&_fw_is_lat=1&_fw_gdpr=0&_fw_gdpr_consent=BOxMZR7OxMZR7AcABBENDDAAAAAut7_______9______9uz_Ov_v_f__33e8__9v_l_7_-___u_-33d4u_1vf99yfm1-7etr3tp_87ues2_Xur__79__3z3_9pxP78k89r7337Ew_v-_v-b7BCPN9Y3v-w&_fw_us_privacy=1---&playername=top-2.5.3&abl=0&mode=vod&655=cep_tags&657=cep_tags&1079=cep_tags&14WQ=cep_iabt&14TR=cep_iabt&14VD=cep_iabt&15HT=cep_iabt&16B7=cep_sent&2PCG=cep_tags&2JP5=cep_tags&2PCF=cep_tags&2PC9=cep_tags&2JP8=cep_tags&BPP=cep_tags&5NC=cep_tags&KKV=cep_tags&6FJ=cep_tags&7WV=cep_tags&55G=cep_tags&7FK=cep_tags&5G8=cep_tags&80N=cep_tags&DHX=cep_tags&7WN=cep_tags&45Z=cep_tags&10PS=cep_tags&7P3=cep_tags&D74=cep_tags&5FT=cep_tags&DG2=cep_tags&7WB=cep_tags;ptgt=a&tpcl=preroll;
+Otto: BOLT Ad Call: https://bea4.v.fwmrm.net/ad/g/1?flag=+slcb+aeti+sltp+fbad+emcr+amcb&nw=42448&asnw=42448&csid=cnn.com_videos_cnngoappletvpreroll&caid=me351ad9f5e98e4b030fbf7dfe2f7086963c55900a&vdur=62&prof=48804%3Acnn_web_vod&resp=vmap1+vast4&vprn=2219801474&pvrn=9148547231&mode=on-demand&afid=436525661&vcid=&metr=1023&vip=70.88.180.74;_fw_h_user_agent=CNNPlusRN-tvOS%2F11207094+CFNetwork%2F3826.400.120+Darwin%2F24.3.0&_fw_h_referer=&_fw_gdpr=0&_fw_gdpr_consent=BOxMZR7OxMZR7AcABBENDDAAAAAut7_______9______9uz_Ov_v_f__33e8__9v_l_7_-___u_-33d4u_1vf99yfm1-7etr3tp_87ues2_Xur__79__3z3_9pxP78k89r7337Ew_v-_v-b7BCPN9Y3v-w&_fw_is_lat=1&_fw_atts=3&_fw_ae=&_fw_cookie_consent=&_fw_us_privacy=1---&playername=top-2.18.0&device=Desktop&_fw_did=sessionid%3A81e32091-c78d-435b-a97e-8738cb8a51cb&_fw_vcid2=81e32091-c78d-435b-a97e-8738cb8a51cb+&vcid=&wmuk=&_fw_3P_uid=&_fw_app_bundle=&transactionId=&paln=&_fw_coppa=&_fw_nielsen_app_id=&appname=&category=&sourceId=&affiliateUrl=&pg=&spec=&vpa=&vpmute=&wta=&playerHeight=720&playerWidth=1280&refDom=&cdpfl=&655=cep_tags&657=cep_tags&1079=cep_tags&14WQ=cep_iabt&14TR=cep_iabt&14VD=cep_iabt&15HT=cep_iabt&16B7=cep_sent&2PCG=cep_tags&2JP5=cep_tags&2PCF=cep_tags&2PC9=cep_tags&2JP8=cep_tags&BPP=cep_tags&5NC=cep_tags&KKV=cep_tags&6FJ=cep_tags&7WV=cep_tags&55G=cep_tags&7FK=cep_tags&5G8=cep_tags&80N=cep_tags&DHX=cep_tags&7WN=cep_tags&45Z=cep_tags&10PS=cep_tags&7P3=cep_tags&D74=cep_tags&5FT=cep_tags&DG2=cep_tags&7WB=cep_tags&_fw_dpr=2;ptgt=a&tpcl=preroll;
+Otto: ############################################################
+Otto: Analysis
+Otto: ############################################################
+Otto: Common parameters:
+Otto: ############################################################
+  1079: SAME (['cep_tags'])
+  10PS: SAME (['cep_tags'])
+  14TR: SAME (['cep_iabt'])
+  14VD: SAME (['cep_iabt'])
+  14WQ: SAME (['cep_iabt'])
+  15HT: SAME (['cep_iabt'])
+  16B7: SAME (['cep_sent'])
+  2JP5: SAME (['cep_tags'])
+  2JP8: SAME (['cep_tags'])
+  2PC9: SAME (['cep_tags'])
+  2PCF: SAME (['cep_tags'])
+  2PCG: SAME (['cep_tags'])
+  45Z: SAME (['cep_tags'])
+  55G: SAME (['cep_tags'])
+  5FT: SAME (['cep_tags'])
+  5G8: SAME (['cep_tags'])
+  5NC: SAME (['cep_tags'])
+  655: SAME (['cep_tags'])
+  657: SAME (['cep_tags'])
+  6FJ: SAME (['cep_tags'])
+  7FK: SAME (['cep_tags'])
+  7P3: SAME (['cep_tags'])
+  7WB: DIFFERENT (PROD: ['cep_tags;ptgt=a'], BOLT: ['cep_tags'])
+  7WN: SAME (['cep_tags'])
+  7WV: SAME (['cep_tags'])
+  80N: SAME (['cep_tags'])
+  BPP: SAME (['cep_tags'])
+  D74: SAME (['cep_tags'])
+  DG2: SAME (['cep_tags'])
+  DHX: SAME (['cep_tags'])
+  KKV: SAME (['cep_tags'])
+  _fw_atts: SAME (['3'])
+  _fw_did: DIFFERENT (PROD: ['sessionid:ce620f01-23b2-41fd-85a8-2386c88758ea'], BOLT: ['sessionid:81e32091-c78d-435b-a97e-8738cb8a51cb'])
+  _fw_gdpr: SAME (['0'])
+  _fw_gdpr_consent: SAME (['BOxMZR7OxMZR7AcABBENDDAAAAAut7_______9______9uz_Ov_v_f__33e8__9v_l_7_-___u_-33d4u_1vf99yfm1-7etr3tp_87ues2_Xur__79__3z3_9pxP78k89r7337Ew_v-_v-b7BCPN9Y3v-w'])
+  _fw_is_lat: SAME (['1'])
+  _fw_us_privacy: SAME (['1---'])
+  _fw_vcid2: DIFFERENT (PROD: ['ce620f01-23b2-41fd-85a8-2386c88758ea'], BOLT: ['81e32091-c78d-435b-a97e-8738cb8a51cb '])
+  afid: DIFFERENT (PROD: ['68151992'], BOLT: ['436525661'])
+  asnw: DIFFERENT (PROD: ['48804'], BOLT: ['42448'])
+  caid: SAME (['me351ad9f5e98e4b030fbf7dfe2f7086963c55900a'])
+  csid: SAME (['cnn.com_videos_cnngoappletvpreroll'])
+  flag: DIFFERENT (PROD: [' slcb aeti sltp fbad vicb emcr amcb'], BOLT: [' slcb aeti sltp fbad emcr amcb'])
+  metr: SAME (['1023'])
+  mode: DIFFERENT (PROD: ['on-demand', 'vod'], BOLT: ['on-demand'])
+  nw: DIFFERENT (PROD: ['48804'], BOLT: ['42448'])
+  playername: DIFFERENT (PROD: ['top-2.5.3'], BOLT: ['top-2.18.0'])
+  prof: DIFFERENT (PROD: ['48804:cnn_appletv_vod'], BOLT: ['48804:cnn_web_vod'])
+  pvrn: DIFFERENT (PROD: ['1540830557'], BOLT: ['9148547231'])
+  resp: SAME (['vmap1 vast4'])
+  tpcl: SAME (['preroll;'])
+  vdur: DIFFERENT (PROD: ['62.02903'], BOLT: ['62'])
+  vip: SAME (['70.88.180.74;_fw_h_user_agent=CNNPlusRN-tvOS/11207094 CFNetwork/3826.400.120 Darwin/24.3.0'])
+  vprn: DIFFERENT (PROD: ['1540830557'], BOLT: ['2219801474'])
+Otto: ############################################################
+Otto: Parameters only in PROD AD REQUEST:
+Otto: ############################################################
+  _fw_ar: ['0']
+  abl: ['0']
+  ifa_id: ['']
+  ifa_type: ['sessionid']
+Otto: ############################################################
+Otto: Parameters only in BOLT AD REQUEST:
+Otto: ############################################################
+  _fw_3P_uid: ['']
+  _fw_ae: ['']
+  _fw_app_bundle: ['']
+  _fw_cookie_consent: ['']
+  _fw_coppa: ['']
+  _fw_dpr: ['2;ptgt=a']
+  _fw_h_referer: ['']
+  _fw_nielsen_app_id: ['']
+  affiliateUrl: ['']
+  appname: ['']
+  category: ['']
+  cdpfl: ['']
+  device: ['Desktop']
+  paln: ['']
+  pg: ['']
+  playerHeight: ['720']
+  playerWidth: ['1280']
+  refDom: ['']
+  sourceId: ['']
+  spec: ['']
+  transactionId: ['']
+  vcid: ['', '']
+  vpa: ['']
+  vpmute: ['']
+  wmuk: ['']
+  wta: ['']
+Otto: ############################################################
+Otto: End of Comparison
+Otto: ############################################################
