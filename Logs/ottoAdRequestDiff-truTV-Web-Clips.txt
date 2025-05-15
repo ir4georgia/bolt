@@ -1,0 +1,69 @@
+Otto: ############################################################
+Otto: Prod vs Stage Ad Call Diff
+Otto: This script compares query parameter between two ad calls, Prod and Bolt
+Otto: Testing Began at 2025-05-14 at 01:54 PM
+Otto: ############################################################
+Otto: Prod Ad Call: https://bea4.v.fwmrm.net/ad/g/1?flag=+slcb+aeti+sltp+fbad+vicb+emcr+amcb&nw=48804&asnw=48804&csid=trutv.com_videopage&caid=me060e6597b5ab59c795ca60fae7bfbe8caefaa389&vdur=30.02999&prof=48804%3Atrutv_web_vod&resp=vmap1+vast4&vprn=808344014&pvrn=808344014&mode=on-demand&afid=221418543&metr=1023&vip=168.161.12.129;_fw_h_user_agent=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_15_7%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F136.0.0.0+Safari%2F537.36&_fw_ae=725bd42fc9c9394e790b9a73610da431&_fw_ar=0&_fw_cookie_consent=1&_fw_us_privacy=1&#45;&#45;-&playername=top-2.1.0&abl=0&mode=vod&_fw_vcid2=ume93d8_7500745000259002765&zwmc=4365110703619446808&ifyr=MAA6J9H0-A-930O&goiz=6ad14d80eff3445aa55b9204058cefdd&vcid=6a0e060a-bbfc-4b1b-b987-0df01744c942&wmuk=6a0e060a-bbfc-4b1b-b987-0df01744c942&cdpfl=lrftf&abip=na;ptgt=a&tpcl=preroll;
+Otto: BOLT Ad Call: https://bea4.v.fwmrm.net/ad/g/1?flag=+slcb+aeti+sltp+fbad+emcr+amcb+vicb&nw=48804&asnw=48804&csid=tnt.tv_videopage&caid=me060e6597b5ab59c795ca60fae7bfbe8caefaa389&vdur=30&prof=48804%3Atrutv_web_vod&resp=vmap1+vast4&vprn=3168722582&pvrn=1612387605&mode=on-demand&afid=256242188&vcid=6a0e060a-bbfc-4b1b-b987-0df01744c942&metr=1023&vip=168.161.12.129;_fw_h_user_agent=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_15_7%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F136.0.0.0+Safari%2F537.36&_fw_h_referer=&_fw_gdpr=0&_fw_gdpr_consent=&_fw_is_lat=0&_fw_atts=&_fw_ae=725bd42fc9c9394e790b9a73610da431&_fw_cookie_consent=1&_fw_us_privacy=1---&playername=top-2.0.0-1&platform=web&_fw_did=&_fw_vcid2=ume93d8_7500745000259002765&vcid=6a0e060a-bbfc-4b1b-b987-0df01744c942&wmuk=6a0e060a-bbfc-4b1b-b987-0df01744c942&cdpfl=&_fw_3p_uid=&_fw_app_bundle=&transactionId=17472449893255294033678055&paln=&_fw_coppa=&_fw_nielsen_app_id=&vpa=&vpmute=&wta=&playerHeight=0&playerWidth=0&ptgt=a&tpcl=preroll;
+Otto: ############################################################
+Otto: Analysis
+Otto: ############################################################
+Otto: Common parameters:
+Otto: ############################################################
+  _fw_ae: SAME (['725bd42fc9c9394e790b9a73610da431'])
+  _fw_cookie_consent: SAME (['1'])
+  _fw_us_privacy: SAME (['1---'])
+  _fw_vcid2: SAME (['ume93d8_7500745000259002765'])
+  afid: DIFFERENT (PROD: ['221418543'], BOLT: ['256242188'])
+  asnw: SAME (['48804'])
+  caid: SAME (['me060e6597b5ab59c795ca60fae7bfbe8caefaa389'])
+  cdpfl: DIFFERENT (PROD: ['lrftf'], BOLT: [''])
+  csid: DIFFERENT (PROD: ['trutv.com_videopage'], BOLT: ['tnt.tv_videopage'])
+  flag: DIFFERENT (PROD: [' slcb aeti sltp fbad vicb emcr amcb'], BOLT: [' slcb aeti sltp fbad emcr amcb vicb'])
+  metr: SAME (['1023'])
+  mode: DIFFERENT (PROD: ['on-demand', 'vod'], BOLT: ['on-demand'])
+  nw: SAME (['48804'])
+  playername: DIFFERENT (PROD: ['top-2.1.0'], BOLT: ['top-2.0.0-1'])
+  prof: SAME (['48804:trutv_web_vod'])
+  pvrn: DIFFERENT (PROD: ['808344014'], BOLT: ['1612387605'])
+  resp: SAME (['vmap1 vast4'])
+  tpcl: SAME (['preroll;'])
+  vcid: DIFFERENT (PROD: ['6a0e060a-bbfc-4b1b-b987-0df01744c942'], BOLT: ['6a0e060a-bbfc-4b1b-b987-0df01744c942', '6a0e060a-bbfc-4b1b-b987-0df01744c942'])
+  vdur: DIFFERENT (PROD: ['30.02999'], BOLT: ['30'])
+  vip: SAME (['168.161.12.129;_fw_h_user_agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36'])
+  vprn: DIFFERENT (PROD: ['808344014'], BOLT: ['3168722582'])
+  wmuk: SAME (['6a0e060a-bbfc-4b1b-b987-0df01744c942'])
+Otto: ############################################################
+Otto: Parameters only in PROD AD REQUEST:
+Otto: ############################################################
+  _fw_ar: ['0']
+  abip: ['na;ptgt=a']
+  abl: ['0']
+  goiz: ['6ad14d80eff3445aa55b9204058cefdd']
+  ifyr: ['MAA6J9H0-A-930O']
+  zwmc: ['4365110703619446808']
+Otto: ############################################################
+Otto: Parameters only in BOLT AD REQUEST:
+Otto: ############################################################
+  _fw_3p_uid: ['']
+  _fw_app_bundle: ['']
+  _fw_atts: ['']
+  _fw_coppa: ['']
+  _fw_did: ['']
+  _fw_gdpr: ['0']
+  _fw_gdpr_consent: ['']
+  _fw_h_referer: ['']
+  _fw_is_lat: ['0']
+  _fw_nielsen_app_id: ['']
+  paln: ['']
+  platform: ['web']
+  playerHeight: ['0']
+  playerWidth: ['0']
+  ptgt: ['a']
+  transactionId: ['17472449893255294033678055']
+  vpa: ['']
+  vpmute: ['']
+  wta: ['']
+Otto: ############################################################
+Otto: End of Comparison
+Otto: ############################################################

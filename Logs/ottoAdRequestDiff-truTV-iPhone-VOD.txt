@@ -1,0 +1,71 @@
+Otto: ############################################################
+Otto: Prod vs Stage Ad Call Diff
+Otto: This script compares query parameter between two ad calls, Prod and Bolt
+Otto: Testing Began at 2025-05-13 at 10:42 AM
+Otto: ############################################################
+Otto: Prod Ad Call: https://bea4.v.fwmrm.net/ad/g/1?flag=+slcb+aeti+sltp+fbad+emcr+amcb+vicb&nw=48804&asnw=48804&csid=trutv.com_mobile_ios_iphone&caid=7910dfa82f31eeac574d221a0c4ce943c83a2f27&vdur=6874.635&prof=48804%3Atrutv_ios_vod&resp=vmap1+vast4&vprn=2140603756&pvrn=2140603756&mode=on-demand&afid=256242188&metr=1023&vip=70.88.180.74;_fw_h_user_agent=truTV%2F10807+CFNetwork%2F3826.500.111.2.2+Darwin%2F24.4.0&_fw_ae=725bd42fc9c9394e790b9a73610da431&_fw_ar=1&_fw_vcid2=7A62E672-4D75-416F-BD2F-5F1030FFEB85&_fw_atts=3&ifa_type=idfa&_fw_did=idfa%3A7A62E672-4D75-416F-BD2F-5F1030FFEB85&_fw_is_lat=0&devgrp=PHN&osgrp=IOS&_fw_nielsen_app_id=P923E8EA9-9B1B-4F15-A180-F5A4FD01FE38&_fw_us_privacy=1YNN&playername=top-2.11.2&abl=0&mode=vod;&ptgt=a&tpcl=preroll;ptgt=a&tpcl=midroll&cpsq=1&tpos=1129.095;ptgt=a&tpcl=midroll&cpsq=2&tpos=1815.914;ptgt=a&tpcl=midroll&cpsq=3&tpos=2369.867;ptgt=a&tpcl=midroll&cpsq=4&tpos=3024.488;ptgt=a&tpcl=midroll&cpsq=5&tpos=3591.555;ptgt=a&tpcl=midroll&cpsq=6&tpos=4294.791;ptgt=a&tpcl=midroll&cpsq=7&tpos=4862.358;ptgt=a&tpcl=midroll&cpsq=8&tpos=5652.748;
+Otto: BOLT Ad Call: https://bea4.v.fwmrm.net/ad/g/1?flag=+slcb+aeti+sltp+fbad+emcr+amcb&nw=42448&asnw=42448&csid=trutv.com_mobile_iphone&caid=7910dfa82f31eeac574d221a0c4ce943c83a2f27&vdur=6874&prof=48804%3Atrutv_ios_vod&resp=vmap1+vast4&vprn=6550947180&pvrn=7650954911&mode=on-demand&afid=436341441&vcid=&metr=1023&vip=70.88.180.74;_fw_h_user_agent=truTV%2F10807+CFNetwork%2F3826.500.111.2.2+Darwin%2F24.4.0&_fw_h_referer=&_fw_gdpr=0&_fw_gdpr_consent=&_fw_is_lat=0&_fw_atts=3&_fw_ae=725bd42fc9c9394e790b9a73610da431&_fw_cookie_consent=&_fw_us_privacy=1YNN&playername=top-2.11.2&device=tablet&_fw_did=idfa%3A7A62E672-4D75-416F-BD2F-5F1030FFEB85&_fw_vcid2=7A62E672-4D75-416F-BD2F-5F1030FFEB85&vcid=&wmuk=&cdpfl=&_fw_3p_uid=&_fw_app_bundle=&transactionId=&paln=&_fw_coppa=&_fw_nielsen_app_id=P923E8EA9-9B1B-4F15-A180-F5A4FD01FE38&vpa=&vpmute=&wta=&playerHeight=0&playerWidth=0&_fw_dpr=2;ptgt=a&tpcl=preroll;ptgt=a&tpcl=midroll&cpsq=1&tpos=1129.095;ptgt=a&tpcl=midroll&cpsq=2&tpos=1815.914;ptgt=a&tpcl=midroll&cpsq=3&tpos=2369.867;ptgt=a&tpcl=midroll&cpsq=4&tpos=3024.488;ptgt=a&tpcl=midroll&cpsq=5&tpos=3591.555;ptgt=a&tpcl=midroll&cpsq=6&tpos=4294.791;ptgt=a&tpcl=midroll&cpsq=7&tpos=4862.358;ptgt=a&tpcl=midroll&cpsq=8&tpos=5652.748;
+Otto: ############################################################
+Otto: Analysis
+Otto: ############################################################
+Otto: Common parameters:
+Otto: ############################################################
+  _fw_ae: SAME (['725bd42fc9c9394e790b9a73610da431'])
+  _fw_atts: SAME (['3'])
+  _fw_did: SAME (['idfa:7A62E672-4D75-416F-BD2F-5F1030FFEB85'])
+  _fw_is_lat: SAME (['0'])
+  _fw_nielsen_app_id: SAME (['P923E8EA9-9B1B-4F15-A180-F5A4FD01FE38'])
+  _fw_us_privacy: SAME (['1YNN'])
+  _fw_vcid2: SAME (['7A62E672-4D75-416F-BD2F-5F1030FFEB85'])
+  afid: DIFFERENT (PROD: ['256242188'], BOLT: ['436341441'])
+  asnw: DIFFERENT (PROD: ['48804'], BOLT: ['42448'])
+  caid: SAME (['7910dfa82f31eeac574d221a0c4ce943c83a2f27'])
+  cpsq: SAME (['1', '2', '3', '4', '5', '6', '7', '8'])
+  csid: DIFFERENT (PROD: ['trutv.com_mobile_ios_iphone'], BOLT: ['trutv.com_mobile_iphone'])
+  flag: DIFFERENT (PROD: [' slcb aeti sltp fbad emcr amcb vicb'], BOLT: [' slcb aeti sltp fbad emcr amcb'])
+  metr: SAME (['1023'])
+  mode: DIFFERENT (PROD: ['on-demand', 'vod;'], BOLT: ['on-demand'])
+  nw: DIFFERENT (PROD: ['48804'], BOLT: ['42448'])
+  playername: SAME (['top-2.11.2'])
+  prof: SAME (['48804:trutv_ios_vod'])
+  pvrn: DIFFERENT (PROD: ['2140603756'], BOLT: ['7650954911'])
+  resp: SAME (['vmap1 vast4'])
+  tpcl: SAME (['preroll;ptgt=a', 'midroll', 'midroll', 'midroll', 'midroll', 'midroll', 'midroll', 'midroll', 'midroll'])
+  tpos: SAME (['1129.095;ptgt=a', '1815.914;ptgt=a', '2369.867;ptgt=a', '3024.488;ptgt=a', '3591.555;ptgt=a', '4294.791;ptgt=a', '4862.358;ptgt=a', '5652.748;'])
+  vdur: DIFFERENT (PROD: ['6874.635'], BOLT: ['6874'])
+  vip: SAME (['70.88.180.74;_fw_h_user_agent=truTV/10807 CFNetwork/3826.500.111.2.2 Darwin/24.4.0'])
+  vprn: DIFFERENT (PROD: ['2140603756'], BOLT: ['6550947180'])
+Otto: ############################################################
+Otto: Parameters only in PROD AD REQUEST:
+Otto: ############################################################
+  _fw_ar: ['1']
+  abl: ['0']
+  devgrp: ['PHN']
+  ifa_type: ['idfa']
+  osgrp: ['IOS']
+  ptgt: ['a']
+Otto: ############################################################
+Otto: Parameters only in BOLT AD REQUEST:
+Otto: ############################################################
+  _fw_3p_uid: ['']
+  _fw_app_bundle: ['']
+  _fw_cookie_consent: ['']
+  _fw_coppa: ['']
+  _fw_dpr: ['2;ptgt=a']
+  _fw_gdpr: ['0']
+  _fw_gdpr_consent: ['']
+  _fw_h_referer: ['']
+  cdpfl: ['']
+  device: ['tablet']
+  paln: ['']
+  playerHeight: ['0']
+  playerWidth: ['0']
+  transactionId: ['']
+  vcid: ['', '']
+  vpa: ['']
+  vpmute: ['']
+  wmuk: ['']
+  wta: ['']
+Otto: ############################################################
+Otto: End of Comparison
+Otto: ############################################################

@@ -1,0 +1,71 @@
+Otto: ############################################################
+Otto: Prod vs Stage Ad Call Diff
+Otto: This script compares query parameter between two ad calls, Prod and Bolt
+Otto: Testing Began at 2025-05-14 at 01:22 PM
+Otto: ############################################################
+Otto: Prod Ad Call: https://bea4.v.fwmrm.net/ad/g/1?flag=+slcb+aeti+sltp+fbad+emcr+amcb+vicb&nw=48804&asnw=48804&csid=trutv.com_videopage_preview&caid=2b3807f2f6b877ea38909fc999e27e90dd18eb8c&vdur=1442.741&prof=48804%3Atrutv_web_vod&resp=vmap1+vast4&vprn=1680023921&pvrn=1680023921&mode=on-demand&afid=256242188&metr=1023&vip=70.88.180.74;_fw_h_user_agent=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_15_7%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F136.0.0.0+Safari%2F537.36&_fw_ae=725bd42fc9c9394e790b9a73610da431&_fw_ar=1&_fw_cookie_consent=1&_fw_us_privacy=1&#45;&#45;-&playername=top-2.14.0&abl=0&mode=vod&_fw_vcid2=ume93d8_7500745000259002765&zwmc=4365110703619446808&ifyr=MAA6J9H0-A-930O&goiz=6ad14d80eff3445aa55b9204058cefdd&vcid=6a0e060a-bbfc-4b1b-b987-0df01744c942&wmuk=6a0e060a-bbfc-4b1b-b987-0df01744c942&cdpfl=lrftf&abip=na;&ptgt=a&tpcl=preroll;ptgt=a&tpcl=midroll&cpsq=1&tpos=490.79;ptgt=a&tpcl=midroll&cpsq=2&tpos=948.314;ptgt=a&tpcl=midroll&cpsq=3&tpos=1184.95;
+Otto: BOLT Ad Call: https://bea4.v.fwmrm.net/ad/g/1?flag=+slcb+aeti+sltp+fbad+emcr+amcb+vicb&nw=48804&asnw=48804&csid=trutv.com_videopage&caid=2b3807f2f6b877ea38909fc999e27e90dd18eb8c&vdur=1442&prof=48804%3Atrutv_web_vod&resp=vmap1+vast4&vprn=7649524590&pvrn=4951786913&mode=on-demand&afid=256242188&vcid=e2817bc2-56cd-46b2-93bb-800f5e4d9a71&metr=1023&vip=168.161.12.129;_fw_h_user_agent=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10.15%3B+rv%3A138.0%29+Gecko%2F20100101+Firefox%2F138.0&_fw_h_referer=&_fw_gdpr=0&_fw_gdpr_consent=&_fw_is_lat=0&_fw_atts=&_fw_ae=725bd42fc9c9394e790b9a73610da431&_fw_cookie_consent=1&_fw_us_privacy=1---&playername=top-2.14.0&platform=web&_fw_did=&_fw_vcid2=o04ab_7504050070820556636&vcid=e2817bc2-56cd-46b2-93bb-800f5e4d9a71&wmuk=e2817bc2-56cd-46b2-93bb-800f5e4d9a71&cdpfl=&_fw_3p_uid=&_fw_app_bundle=&transactionId=17472430651940227173544009&paln=&_fw_coppa=&_fw_nielsen_app_id=&vpa=&vpmute=&wta=&playerHeight=0&playerWidth=0&ptgt=a&tpcl=preroll;ptgt=a&tpcl=midroll&cpsq=1&tpos=490.790;ptgt=a&tpcl=midroll&cpsq=2&tpos=948.314;ptgt=a&tpcl=midroll&cpsq=3&tpos=1184.950;
+Otto: ############################################################
+Otto: Analysis
+Otto: ############################################################
+Otto: Common parameters:
+Otto: ############################################################
+  _fw_ae: SAME (['725bd42fc9c9394e790b9a73610da431'])
+  _fw_cookie_consent: SAME (['1'])
+  _fw_us_privacy: SAME (['1---'])
+  _fw_vcid2: DIFFERENT (PROD: ['ume93d8_7500745000259002765'], BOLT: ['o04ab_7504050070820556636'])
+  afid: SAME (['256242188'])
+  asnw: SAME (['48804'])
+  caid: SAME (['2b3807f2f6b877ea38909fc999e27e90dd18eb8c'])
+  cdpfl: DIFFERENT (PROD: ['lrftf'], BOLT: [''])
+  cpsq: SAME (['1', '2', '3'])
+  csid: DIFFERENT (PROD: ['trutv.com_videopage_preview'], BOLT: ['trutv.com_videopage'])
+  flag: SAME ([' slcb aeti sltp fbad emcr amcb vicb'])
+  metr: SAME (['1023'])
+  mode: DIFFERENT (PROD: ['on-demand', 'vod'], BOLT: ['on-demand'])
+  nw: SAME (['48804'])
+  playername: SAME (['top-2.14.0'])
+  prof: SAME (['48804:trutv_web_vod'])
+  ptgt: SAME (['a'])
+  pvrn: DIFFERENT (PROD: ['1680023921'], BOLT: ['4951786913'])
+  resp: SAME (['vmap1 vast4'])
+  tpcl: SAME (['preroll;ptgt=a', 'midroll', 'midroll', 'midroll'])
+  tpos: DIFFERENT (PROD: ['490.79;ptgt=a', '948.314;ptgt=a', '1184.95;'], BOLT: ['490.790;ptgt=a', '948.314;ptgt=a', '1184.950;'])
+  vcid: DIFFERENT (PROD: ['6a0e060a-bbfc-4b1b-b987-0df01744c942'], BOLT: ['e2817bc2-56cd-46b2-93bb-800f5e4d9a71', 'e2817bc2-56cd-46b2-93bb-800f5e4d9a71'])
+  vdur: DIFFERENT (PROD: ['1442.741'], BOLT: ['1442'])
+  vip: DIFFERENT (PROD: ['70.88.180.74;_fw_h_user_agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36'], BOLT: ['168.161.12.129;_fw_h_user_agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:138.0) Gecko/20100101 Firefox/138.0'])
+  vprn: DIFFERENT (PROD: ['1680023921'], BOLT: ['7649524590'])
+  wmuk: DIFFERENT (PROD: ['6a0e060a-bbfc-4b1b-b987-0df01744c942'], BOLT: ['e2817bc2-56cd-46b2-93bb-800f5e4d9a71'])
+Otto: ############################################################
+Otto: Parameters only in PROD AD REQUEST:
+Otto: ############################################################
+  _fw_ar: ['1']
+  abip: ['na;']
+  abl: ['0']
+  goiz: ['6ad14d80eff3445aa55b9204058cefdd']
+  ifyr: ['MAA6J9H0-A-930O']
+  zwmc: ['4365110703619446808']
+Otto: ############################################################
+Otto: Parameters only in BOLT AD REQUEST:
+Otto: ############################################################
+  _fw_3p_uid: ['']
+  _fw_app_bundle: ['']
+  _fw_atts: ['']
+  _fw_coppa: ['']
+  _fw_did: ['']
+  _fw_gdpr: ['0']
+  _fw_gdpr_consent: ['']
+  _fw_h_referer: ['']
+  _fw_is_lat: ['0']
+  _fw_nielsen_app_id: ['']
+  paln: ['']
+  platform: ['web']
+  playerHeight: ['0']
+  playerWidth: ['0']
+  transactionId: ['17472430651940227173544009']
+  vpa: ['']
+  vpmute: ['']
+  wta: ['']
+Otto: ############################################################
+Otto: End of Comparison
+Otto: ############################################################
